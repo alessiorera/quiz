@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Quiz compatibilità</title>
+        <link rel="stylesheet" href="stile.css" type="text/css" media="all" />
+        <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body onload="aggiornaDom()">
+        <div id="nav">
+            Quanto sei compatibile col tuo partner?
+        </div>
+        <div id="cont">
+            <h1>Esegui il test!</h1>
+            <div id="progress-cont">
+                <span id="progress"></span>
+            </div>
+            <h2>Domanda n.<span id="nDom">1</span></h2>
+            <h3 id="domanda">Domanda?</h3>
+            <div id="risposte">
+                <input type="button" name="risp1" id="risp1" onclick="seleziona(event)"/>
+                <input type="button" name="risp2" id="risp2" onclick="seleziona(event)"/>
+                <input type="button" name="risp3" id="risp3" onclick="seleziona(event)"/>
+                <input type="button" name="risp4" id="risp4" onclick="seleziona(event)"/>
+            </div>
+        </div>
+    </body>
+</html>
